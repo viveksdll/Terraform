@@ -1,0 +1,30 @@
+# .gitignore for Terraform
+
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+*.hcl
+# Ignore .terraform directory
+.terraform/
+
+# # Ignore key files
+*.pem
+
+.terraform.lock.hcl
+
+# Ignore any .tfvars files that are intended to be kept secret
+*.auto.tfvars
+*.auto.tfvars.json
+*.tfvars
+
+# Ignore override files as they are usually used to override resources locally and may not be checked into version control
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+*_override.tfvars
+*_override.tfvars.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
